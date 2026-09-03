@@ -1,0 +1,46 @@
+# Agent Security EDR Agent Configuration
+backend_url: "http://localhost:8080"
+poll_interval: 30
+hash_scan_interval: 150
+log_level: "INFO"
+log_dir: "logs"
+
+# Monitoring toggles
+enable_network_monitoring: true
+enable_file_monitoring: true
+enable_persistence_monitoring: true
+enable_threat_intel: true
+
+# Advanced detection toggles
+enable_beaconing_detection: true
+enable_domain_intel: true
+enable_correlation: true
+enable_timeline: true
+enable_advanced_detections: true
+enable_yara_scanning: true
+yara_rules_dir: "yara_rules"
+enable_dll_sideload_monitor: true
+enable_task_scheduler_monitor: true
+enable_hosts_file_monitor: true
+
+
+# Beaconing detection tuning
+beaconing_window_seconds: 300
+beaconing_min_connections: 5
+beaconing_max_jitter: 0.25
+
+# File monitoring directories (platform-specific)
+# If empty, platform defaults are used
+monitor_dirs_windows:
+  - "%USERPROFILE%\\Downloads"
+  - "%USERPROFILE%\\Desktop"
+  - "%APPDATA%\\Microsoft\\Windows\\Start Menu\\Programs\\Startup"
+  - "%TEMP%"
+
+monitor_dirs_linux:
+  - "~/Downloads"
+  - "/tmp"
+
+monitor_dirs_macos:
+  - "~/Downloads"
+  - "~/Desktop"

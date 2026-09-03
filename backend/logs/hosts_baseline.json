@@ -1,0 +1,38 @@
+{
+  "timestamp": "2026-08-06T16:01:48.249900",
+  "hash": "fb461f6fc24edbb9d74fc96ea6d5ee9e7c5a57a22d9fa35e873b522d74e60314",
+  "entries": [
+    [
+      "127.0.0.1",
+      "kubernetes.docker.internal"
+    ],
+    [
+      "192.168.29.27",
+      "gateway.docker.internal"
+    ],
+    [
+      "192.168.29.27",
+      "host.docker.internal"
+    ],
+    [
+      "\u00ef\u00bb\u00bf#",
+      "(c)"
+    ],
+    [
+      "\u00ef\u00bb\u00bf#",
+      "1993-2009"
+    ],
+    [
+      "\u00ef\u00bb\u00bf#",
+      "copyright"
+    ],
+    [
+      "\u00ef\u00bb\u00bf#",
+      "corp."
+    ],
+    [
+      "\u00ef\u00bb\u00bf#",
+      "microsoft"
+    ]
+  ]
+}
